@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/00.Scenes/Main/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/00.Scenes/Dev/Dongyeop/DongyeopStart.unity
+    guid: 5de5cf28a09b7224a9101b824604c9f3
+  - enabled: 1
+    path: Assets/00.Scenes/Dev/Dongyeop/Dongyeop.unity
+    guid: 2ffb4db59b7abd7459b3e39eb617dd86
   m_configObjects: {}
