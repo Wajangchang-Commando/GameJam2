@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lion_Skill3 : MonoBehaviour
+public class YSkill_Manager : MonoBehaviour
 {
     void Start()
     {
@@ -11,5 +11,9 @@ public class Lion_Skill3 : MonoBehaviour
     void Update()
     {
         
+    }
+    IEnumerator Skill1()
+    {
+
     }
 }
