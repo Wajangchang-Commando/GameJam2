@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5836639361225713082}
   - component: {fileID: -5172840325951619330}
   - component: {fileID: -6626612820603470}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HaHoeTal
   m_TagString: Untagged
   m_Icon: {fileID: 0}

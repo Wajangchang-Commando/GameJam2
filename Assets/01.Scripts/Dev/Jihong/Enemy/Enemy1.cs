@@ -9,7 +9,7 @@ public class Enemy1 : MonoBehaviour
     Vector3 dir;
     float speed = 1;
     float x, y;
-    bool onFire=true;
+    bool onFire=false;
     void Start()
     {
         StartCoroutine(Fire());
@@ -41,7 +41,7 @@ public class Enemy1 : MonoBehaviour
             if (onFire) 
             { 
             GameObject Bullet = Instantiate(Hahoetal);
-            Bullet.transform.position = transform.position;            
+                Bullet.transform.position = transform.position;             
             }
             yield return new WaitForSeconds(Random.Range(1.5f, 2f));
         }
