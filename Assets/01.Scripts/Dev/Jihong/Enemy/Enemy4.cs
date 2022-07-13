@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy1 : MonoBehaviour
+public class Enemy4 : MonoBehaviour
 {
     [SerializeField]
     GameObject Hahoetal;
     Vector3 dir;
-    float speed = 1;
+    float speed = 1.5f;
     float x, y;
-    bool onFire=false;
+    bool onFire = false;
     void Start()
     {
         StartCoroutine(Fire());
@@ -22,7 +22,7 @@ public class Enemy1 : MonoBehaviour
         GameObject target = GameObject.Find("Player");
         dir = target.transform.position - transform.position;
         x = dir.x;
-        y=dir.y;
+        y = dir.y;
         dir.Normalize();
         if ((Mathf.Abs(x) + 1.5f * Mathf.Abs(y) <= 10))
         {
@@ -38,12 +38,12 @@ public class Enemy1 : MonoBehaviour
     {
         while (true)
         {
-            if (onFire) 
-            { 
-            GameObject Bullet = Instantiate(Hahoetal);
-                Bullet.transform.position = transform.position;             
+            if (onFire)
+            {
+                GameObject Bullet = Instantiate(Hahoetal);
+                Bullet.transform.position = transform.position;
             }
-            yield return new WaitForSeconds(Random.Range(1.5f, 2f));
+            yield return new WaitForSeconds(Random.Range(2f, 2.5f));
         }
     }
 }

@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class HaHoeTal : MonoBehaviour
 {
-    Vector3 dir;
-    float speed=1;
+    public Vector3 dir;
+    float speed=3;
     GameObject target;
+    public int vanghyang =1;
     void Start()
     {
         target = GameObject.Find("Player");
@@ -20,7 +21,7 @@ public class HaHoeTal : MonoBehaviour
     }
     void Move()
     {
-        dir = target.transform.position - transform.position;
+        dir = vanghyang * (target.transform.position - transform.position);
         dir.Normalize();
     }
 }
