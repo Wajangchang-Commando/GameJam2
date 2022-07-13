@@ -1186,8 +1186,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 7674493858657400179, guid: 469146a6763ef3642895f40d728f44c7, type: 3}
   Enemy_Heart: {fileID: 9131972432031353363, guid: 6daaaa2eff32c5f42972ccad8f24edab, type: 3}
-  Enemy_Lion: {fileID: 0}
-  Enemy_Girl: {fileID: 0}
+  Enemy_Lion: {fileID: 4765222291121580404, guid: 62954b3b6ff3e9243af2205cfa5710df, type: 3}
+  Enemy_Girl: {fileID: 4085811639120654578, guid: 5b5ae90f17234ba44a2f1bddca9bb8dc, type: 3}
 --- !u!4 &1665643726
 Transform:
   m_ObjectHideFlags: 0
