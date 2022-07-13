@@ -7,7 +7,7 @@ public class EnemyHP : MonoBehaviour
     [SerializeField] private int _maxEnemyHP;
 
     private PoolManager _poolManager;
-    private int _curEnemyHP;
+    [SerializeField]private int _curEnemyHP;
 
     private void Start()
     {
@@ -17,7 +17,7 @@ public class EnemyHP : MonoBehaviour
     private void Update()
     {
         if (_curEnemyHP <= 0)
-            _poolManager.Returner(gameObject.GetComponent<Poolable>());
+            Destroy(gameObject);
     }
 
     public void EnemyAYA(int aya)
