@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7674493858657400183}
   - component: {fileID: 352919631193110745}
   - component: {fileID: -1400931921910282922}
+  - component: {fileID: 3073752468539185936}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Untagged
@@ -184,3 +185,16 @@ PolygonCollider2D:
       - {x: 0.35999998, y: -0.85999995}
       - {x: 0.82, y: -0.82}
       - {x: 0.82, y: -0.35}
+--- !u!114 &3073752468539185936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7674493858657400179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4caa0f772659446a8a687b40e96a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hahoetal: {fileID: 0}
