@@ -10,6 +10,10 @@ public class EnemyManager : MonoBehaviour
     GameObject Enemy;
     [SerializeField]
     GameObject Enemy_Heart;
+    [SerializeField]
+    GameObject Enemy_Lion;
+    [SerializeField]
+    GameObject Enemy_Girl;
     float x, y;
     void Update()
     {
@@ -19,7 +23,7 @@ public class EnemyManager : MonoBehaviour
         currenttime += Time.deltaTime;
         if (currenttime > spawntime && Mathf.Abs(x) + 2*Mathf.Abs(y) >= 12.4f && Mathf.Abs(x) + 2*Mathf.Abs(y) <= 12.6f)
         {
-            Summon(Random.Range(0, 2));
+            Summon(Random.Range(0, 4));
         }
     }
     void Summon(int forswitch)
@@ -33,6 +37,14 @@ public class EnemyManager : MonoBehaviour
             case 1:
                 GameObject enemy_heart = Instantiate(Enemy_Heart);
                 enemy_heart.transform.position = transform.position;
+                break;
+            case 2:
+                GameObject enemy_Lion = Instantiate(Enemy_Lion);
+                enemy_Lion.transform.position = transform.position;
+                break;
+            case 3:
+                GameObject enemy_Girl = Instantiate(Enemy_Girl);
+                enemy_Girl.transform.position = transform.position;
                 break;
         }
         currenttime = 0;
