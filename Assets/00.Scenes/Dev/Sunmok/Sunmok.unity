@@ -945,6 +945,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 7674493858657400179, guid: 469146a6763ef3642895f40d728f44c7, type: 3}
   Enemy_Heart: {fileID: 9131972432031353363, guid: 6daaaa2eff32c5f42972ccad8f24edab, type: 3}
+  Enemy_Lion: {fileID: 0}
+  Enemy_Girl: {fileID: 0}
 --- !u!4 &1665643726
 Transform:
   m_ObjectHideFlags: 0
@@ -1251,6 +1253,10 @@ PrefabInstance:
     - target: {fileID: 7353645843504519012, guid: a876bec1593fe5242945b54ac1b16b0a, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.0839
+      objectReference: {fileID: 0}
+    - target: {fileID: 7353645843504519017, guid: a876bec1593fe5242945b54ac1b16b0a, type: 3}
+      propertyPath: m_TagString
+      value: Knife
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7353645843504519013, guid: a876bec1593fe5242945b54ac1b16b0a, type: 3}
