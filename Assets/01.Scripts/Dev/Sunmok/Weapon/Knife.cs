@@ -11,6 +11,7 @@ public class Knife : MonoBehaviour
     [SerializeField] private float angle;
     [SerializeField] private Transform firepos;
     [SerializeField] private PolygonCollider2D coll;
+    [SerializeField] private int Damage;
     void Update()
     {
         Gunturn();
@@ -54,5 +55,14 @@ public class Knife : MonoBehaviour
         Rot.Normalize();
         angle = Mathf.Atan2(Rot.y, Rot.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            print(1);
+            collision.GetComponent<EnemyHP>().EnemyAYA(Damage);
+            print(2);
+        }
     }
 }
