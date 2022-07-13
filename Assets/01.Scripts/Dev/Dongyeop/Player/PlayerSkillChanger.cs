@@ -19,11 +19,15 @@ public class PlayerSkillChanger : MonoBehaviour // Q, E¸¦ ´©¸£¸é »ç¿ë °¡´É ½ºÅ³À
     [SerializeField] private GameObject _eKnife;
     #endregion
 
+    [SerializeField] private GameObject Gun;
+    [SerializeField] private GameObject Knife;
+    [SerializeField] private GameObject Bow;
+
     public int nowNum = 1;
     private int _qNum = 2;
     private int _eNum = 3;
     private int _reset = 0;
-
+    //1 = °Ç, 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
@@ -45,6 +49,10 @@ public class PlayerSkillChanger : MonoBehaviour // Q, E¸¦ ´©¸£¸é »ç¿ë °¡´É ½ºÅ³À
                     nowNum = _qNum;
                     _qNum = _reset;
                     _reset = 0;
+
+                    Bow.SetActive(true);
+                    Gun.SetActive(false);
+                    Knife.SetActive(false);
                 }
                 else if (_qNum == 3)
                 {
@@ -53,6 +61,9 @@ public class PlayerSkillChanger : MonoBehaviour // Q, E¸¦ ´©¸£¸é »ç¿ë °¡´É ½ºÅ³À
                     nowNum = _qNum;
                     _qNum = _reset;
                     _reset = 0;
+                    Bow.SetActive(false);
+                    Gun.SetActive(false);
+                    Knife.SetActive(true);
                 }
                 break;
             case 2:
@@ -63,6 +74,9 @@ public class PlayerSkillChanger : MonoBehaviour // Q, E¸¦ ´©¸£¸é »ç¿ë °¡´É ½ºÅ³À
                     nowNum = _qNum;
                     _qNum = _reset;
                     _reset = 0;
+                    Bow.SetActive(false);
+                    Gun.SetActive(true);
+                    Knife.SetActive(false);
                 }
                 else if (_qNum == 3)
                 {
@@ -71,6 +85,9 @@ public class PlayerSkillChanger : MonoBehaviour // Q, E¸¦ ´©¸£¸é »ç¿ë °¡´É ½ºÅ³À
                     nowNum = _qNum;
                     _qNum = _reset;
                     _reset = 0;
+                    Bow.SetActive(false);
+                    Gun.SetActive(false);
+                    Knife.SetActive(true);
                 }
                 break;
             case 3:
@@ -81,6 +98,9 @@ public class PlayerSkillChanger : MonoBehaviour // Q, E¸¦ ´©¸£¸é »ç¿ë °¡´É ½ºÅ³À
                     nowNum = _qNum;
                     _qNum = _reset;
                     _reset = 0;
+                    Bow.SetActive(false);
+                    Gun.SetActive(true);
+                    Knife.SetActive(false);
                 }
                 else if (_qNum == 2)
                 {
@@ -89,6 +109,9 @@ public class PlayerSkillChanger : MonoBehaviour // Q, E¸¦ ´©¸£¸é »ç¿ë °¡´É ½ºÅ³À
                     nowNum = _qNum;
                     _qNum = _reset;
                     _reset = 0;
+                    Bow.SetActive(true);
+                    Gun.SetActive(false);
+                    Knife.SetActive(false);
                 }
                 break;
             default:
@@ -108,6 +131,9 @@ public class PlayerSkillChanger : MonoBehaviour // Q, E¸¦ ´©¸£¸é »ç¿ë °¡´É ½ºÅ³À
                     nowNum = _eNum;
                     _eNum = _reset;
                     _reset = 0;
+                    Bow.SetActive(true);
+                    Gun.SetActive(false);
+                    Knife.SetActive(false);
                 }
                 else if (_eNum == 3)
                 {
@@ -116,6 +142,9 @@ public class PlayerSkillChanger : MonoBehaviour // Q, E¸¦ ´©¸£¸é »ç¿ë °¡´É ½ºÅ³À
                     nowNum = _eNum;
                     _eNum = _reset;
                     _reset = 0;
+                    Bow.SetActive(false);
+                    Gun.SetActive(false);
+                    Knife.SetActive(true);
                 }
                 break;
             case 2:
@@ -126,6 +155,9 @@ public class PlayerSkillChanger : MonoBehaviour // Q, E¸¦ ´©¸£¸é »ç¿ë °¡´É ½ºÅ³À
                     nowNum = _eNum;
                     _eNum = _reset;
                     _reset = 0;
+                    Bow.SetActive(false);
+                    Gun.SetActive(true);
+                    Knife.SetActive(false);
                 }
                 else if (_eNum == 3)
                 {
@@ -134,6 +166,9 @@ public class PlayerSkillChanger : MonoBehaviour // Q, E¸¦ ´©¸£¸é »ç¿ë °¡´É ½ºÅ³À
                     nowNum = _eNum;
                     _eNum = _reset;
                     _reset = 0;
+                    Bow.SetActive(false);
+                    Gun.SetActive(false);
+                    Knife.SetActive(true);
                 }
                 break;
             case 3:
@@ -144,6 +179,9 @@ public class PlayerSkillChanger : MonoBehaviour // Q, E¸¦ ´©¸£¸é »ç¿ë °¡´É ½ºÅ³À
                     nowNum = _eNum;
                     _eNum = _reset;
                     _reset = 0;
+                    Bow.SetActive(false);
+                    Gun.SetActive(true);
+                    Knife.SetActive(false);
                 }
                 else if (_eNum == 2)
                 {
@@ -152,6 +190,9 @@ public class PlayerSkillChanger : MonoBehaviour // Q, E¸¦ ´©¸£¸é »ç¿ë °¡´É ½ºÅ³À
                     nowNum = _eNum;
                     _eNum = _reset;
                     _reset = 0;
+                    Bow.SetActive(true);
+                    Gun.SetActive(false);
+                    Knife.SetActive(false);
                 }
                 break;
             default:
