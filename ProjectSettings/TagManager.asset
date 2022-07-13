@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Enemy
   - Bullet
-  - Knife
   layers:
   - Default
   - TransparentFX
@@ -14,10 +13,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Bullet
+  - Enemy
+  - Confiner
   - 
   - 
   - 
