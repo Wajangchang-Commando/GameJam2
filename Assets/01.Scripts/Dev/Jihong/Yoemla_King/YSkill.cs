@@ -8,10 +8,10 @@ public class YSkill : MonoBehaviour //보스 스킬 소환 및 쿨타임 (a,b가 쿨타임)
     GameObject GetSkill1;
     [SerializeField]
     GameObject GetSkill2;
-    bool cooltime=true;
+    bool cooltime=false;
     float currenttime = 0;
     int a, b;
-    int Cooltime;
+    int Cooltime=3;
     void Start()
     {
         a = 8;
@@ -58,7 +58,6 @@ public class YSkill : MonoBehaviour //보스 스킬 소환 및 쿨타임 (a,b가 쿨타임)
    void Skill2()
     {
         GameObject skill2 = Instantiate(GetSkill2);
-        GameObject player = GameObject.Find("Player");
-        skill2.transform.position = new Vector3(player.transform.position.x,player.transform.position.y+4,player.transform.position.z);
+        skill2.transform.position = new Vector3(transform.position.x,transform.position.y+4,0);
     }
 }

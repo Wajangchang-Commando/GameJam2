@@ -130,6 +130,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 447305277535677126, guid: a876bec1593fe5242945b54ac1b16b0a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 447305277535677126, guid: a876bec1593fe5242945b54ac1b16b0a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.82
+      objectReference: {fileID: 0}
     - target: {fileID: 7353645842457869217, guid: a876bec1593fe5242945b54ac1b16b0a, type: 3}
       propertyPath: m_Name
       value: Player
@@ -296,10 +304,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd482915815fb2e42a78d3bcaa60c3c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 7674493858657400179, guid: 469146a6763ef3642895f40d728f44c7, type: 3}
-  Enemy_Heart: {fileID: 9131972432031353363, guid: 6daaaa2eff32c5f42972ccad8f24edab, type: 3}
-  Enemy_Lion: {fileID: 4765222291121580404, guid: 62954b3b6ff3e9243af2205cfa5710df, type: 3}
-  Enemy_Girl: {fileID: 4085811639120654578, guid: 5b5ae90f17234ba44a2f1bddca9bb8dc, type: 3}
 --- !u!4 &2078804812
 Transform:
   m_ObjectHideFlags: 0

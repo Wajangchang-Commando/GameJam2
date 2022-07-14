@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class YSkill1_set : MonoBehaviour  //Ä®¿òÁ÷ÀÓ (follow)
 {
-    float speed = 6;
+    float speed = 10;
     void Update()
     {
         transform.position += transform.TransformDirection(Vector3.right) * speed * Time.deltaTime;
