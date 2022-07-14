@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8231344547403499835}
   - component: {fileID: 1497728770333786957}
   - component: {fileID: 5260015933410703709}
-  - component: {fileID: 7571536750493906524}
+  - component: {fileID: 4781951872509554148}
   m_Layer: 0
-  m_Name: Horn
+  m_Name: HornNTN
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,7 +110,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.031064503, y: 0.060883228}
   m_EdgeRadius: 0
---- !u!114 &7571536750493906524
+--- !u!114 &4781951872509554148
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9051762160063775124}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c81a1cfb55f4df04ebc914c66b4d3a21, type: 3}
+  m_Script: {fileID: 11500000, guid: f47864fc08ef7b649a341f87d7889ef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  _speed: 10
