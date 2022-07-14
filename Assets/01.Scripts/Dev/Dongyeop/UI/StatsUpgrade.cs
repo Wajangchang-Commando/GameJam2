@@ -16,8 +16,12 @@ public class StatsUpgrade : MonoBehaviour //스텟 업그래이드를 할 수 있습니다.
     [SerializeField] private Text _txt; //이건 스텟에 쓸 TXT 넣는거 
 
 
-    public float statsPoint = 0;
-
+    public static float statsPoint = 0;
+    public static StatsUpgrade Instance;
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Update()
     {

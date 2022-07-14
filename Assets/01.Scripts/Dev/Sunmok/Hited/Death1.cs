@@ -12,6 +12,7 @@ public class Death1 : MonoBehaviour
     }
     private void OnDisable()
     {
+        BossPa.Instance.die3();
         Viewer.ThirdBossDie();
     }
     private void Update()

@@ -11,6 +11,7 @@ public class Enemy1 : MonoBehaviour //하회탈 날리는 사람의 하회탈날리는 코드
     float x, y;
     bool onFire=false;
     GameObject target;
+
     void Start()
     {
         StartCoroutine(Fire());

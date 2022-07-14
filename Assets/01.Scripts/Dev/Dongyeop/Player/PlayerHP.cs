@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHP : MonoBehaviour //플레이어에 들어갈 HP 스크립트입니다. 
 {
@@ -12,7 +13,8 @@ public class PlayerHP : MonoBehaviour //플레이어에 들어갈 HP 스크립트입니다.
 
     private void Update()
     {
-        //_maxHP = 10 + StatManager.Instance.HpAdv;
+        _maxHP = 10 + StatManager.Instance.HpAdv;
+        nowHP = Mathf.Clamp(nowHP, -1, _maxHP);
     }
     public float MaxHP
     {
@@ -28,16 +30,21 @@ public class PlayerHP : MonoBehaviour //플레이어에 들어갈 HP 스크립트입니다.
             return nowHP;
         }
     }
-
+    
     private void Start()
     {
         nowHP = _maxHP;
         invi = GetComponent<PlayerInvincibility>();
     }
+    
 
     public void TalkDamage(int damage)
     {
         nowHP -= damage;
         StartCoroutine(invi.Invincibility());
+        if(nowHP <= 0)
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 }

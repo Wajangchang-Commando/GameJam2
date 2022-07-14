@@ -13,20 +13,29 @@ public class EnemyHP : MonoBehaviour //말 그대로 에너미에 들어갈 HP, 풀링이 필요
     {
         _curEnemyHP = _maxEnemyHP;
     }
-
+    private void OnEnable()
+    {
+        _curEnemyHP = _maxEnemyHP;
+    }
     private void Update()
     {
-        if (_curEnemyHP <= 0)
-            if(Random.Range(0,2) == 1)
-            {
-                Poolable obj = PoolManager.Instance.Summon("HPup");
-                obj.transform.position = transform.position;
-            }
-            PoolManager.Instance.Returner(GetComponent<Poolable>());
     }
 
     public void EnemyAYA(int aya)
     {
         _curEnemyHP -= aya;
+        if (_curEnemyHP <= 0)
+        {
+            if (Random.Range(0, 2) == 1)
+            {
+                Poolable obj = PoolManager.Instance.Summon("HPup");
+                obj.transform.position = transform.position;
+            }
+
+            StatsUpgrade.statsPoint += 0.1f;
+            PoolManager.Instance.Returner(GetComponent<Poolable>());
+            
+        }
+
     }
 }

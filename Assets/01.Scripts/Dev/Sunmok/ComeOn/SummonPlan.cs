@@ -8,12 +8,13 @@ public class SummonPlan : MonoBehaviour
     [SerializeField] Transform point2;
     [SerializeField] Transform point3;
     [SerializeField] Transform point4;
-    
+    [SerializeField] BossPa  bosys;
+
     private void Start()
     {
         StartCoroutine(Patton1());
     }
-    IEnumerator Patton1()
+    public IEnumerator Patton1()
     {
         GameObject obj = EnemyManager.instance.Summon1();
         obj.transform.position = point1.position;
@@ -94,11 +95,19 @@ public class SummonPlan : MonoBehaviour
         obj = EnemyManager.instance.Summon2();
         obj.transform.position = point4.position;
         yield return new WaitForSeconds(1f);
+        bosys.Spawn1();
+        yield return null;
     }
-
-    IEnumerator Patton2()
+    public void start2()
     {
+        StopAllCoroutines();
+        StartCoroutine(Patton2());
+    }
+    public IEnumerator Patton2()
+    {
+        Debug.Log("asdf");
         GameObject obj = EnemyManager.instance.Summon2();
+        Debug.Log("asdf2");
         obj.transform.position = point1.position;
         obj = EnemyManager.instance.Summon4();
         obj.transform.position = point2.position;
@@ -108,6 +117,7 @@ public class SummonPlan : MonoBehaviour
         obj.transform.position = point4.position;
         yield return new WaitForSeconds(1f);
         obj = EnemyManager.instance.Summon2();
+        Debug.Log("asdf2");
 
         obj.transform.position = point1.position;
         obj = EnemyManager.instance.Summon4();
@@ -118,6 +128,7 @@ public class SummonPlan : MonoBehaviour
         obj.transform.position = point4.position;
         yield return new WaitForSeconds(1f);
         obj = EnemyManager.instance.Summon2();
+        Debug.Log("asdf2");
 
         obj.transform.position = point1.position;
         obj = EnemyManager.instance.Summon2();
@@ -128,6 +139,7 @@ public class SummonPlan : MonoBehaviour
         obj.transform.position = point4.position;
         yield return new WaitForSeconds(1f);
         obj = EnemyManager.instance.Summon2();
+        Debug.Log("asdf2");
 
         obj.transform.position = point1.position;
         obj = EnemyManager.instance.Summon4();
@@ -138,6 +150,7 @@ public class SummonPlan : MonoBehaviour
         obj.transform.position = point4.position;
         yield return new WaitForSeconds(1f);
         obj = EnemyManager.instance.Summon2();
+        Debug.Log("asdf2");
 
         obj.transform.position = point1.position;
         obj = EnemyManager.instance.Summon4();
@@ -148,36 +161,7 @@ public class SummonPlan : MonoBehaviour
         obj.transform.position = point4.position;
         yield return new WaitForSeconds(1f);
         obj = EnemyManager.instance.Summon2();
-
-        obj.transform.position = point1.position;
-        obj = EnemyManager.instance.Summon4();
-        obj.transform.position = point2.position;
-        obj = EnemyManager.instance.Summon4();
-        obj.transform.position = point3.position;
-        obj = EnemyManager.instance.Summon2();
-        obj.transform.position = point4.position;
-        yield return new WaitForSeconds(1f);
-        obj = EnemyManager.instance.Summon2();
-
-        obj.transform.position = point1.position;
-        obj = EnemyManager.instance.Summon2();
-        obj.transform.position = point2.position;
-        obj = EnemyManager.instance.Summon2();
-        obj.transform.position = point3.position;
-        obj = EnemyManager.instance.Summon4();
-        obj.transform.position = point4.position;
-        yield return new WaitForSeconds(1f);
-        obj = EnemyManager.instance.Summon2();
-
-        obj.transform.position = point1.position;
-        obj = EnemyManager.instance.Summon2();
-        obj.transform.position = point2.position;
-        obj = EnemyManager.instance.Summon4();
-        obj.transform.position = point3.position;
-        obj = EnemyManager.instance.Summon2();
-        obj.transform.position = point4.position;
-        yield return new WaitForSeconds(1f);
-        obj = EnemyManager.instance.Summon2();
+        Debug.Log("asdf2");
 
         obj.transform.position = point1.position;
         obj = EnemyManager.instance.Summon4();
@@ -189,6 +173,7 @@ public class SummonPlan : MonoBehaviour
         yield return new WaitForSeconds(1f);
         obj = EnemyManager.instance.Summon2();
 
+        Debug.Log("asdf2");
         obj.transform.position = point1.position;
         obj = EnemyManager.instance.Summon2();
         obj.transform.position = point2.position;
@@ -198,6 +183,40 @@ public class SummonPlan : MonoBehaviour
         obj.transform.position = point4.position;
         yield return new WaitForSeconds(1f);
         obj = EnemyManager.instance.Summon2();
+        Debug.Log("asdf2");
+
+        obj.transform.position = point1.position;
+        obj = EnemyManager.instance.Summon2();
+        obj.transform.position = point2.position;
+        obj = EnemyManager.instance.Summon4();
+        obj.transform.position = point3.position;
+        obj = EnemyManager.instance.Summon2();
+        obj.transform.position = point4.position;
+        yield return new WaitForSeconds(1f);
+        obj = EnemyManager.instance.Summon2();
+        Debug.Log("asdf2");
+
+        obj.transform.position = point1.position;
+        obj = EnemyManager.instance.Summon4();
+        obj.transform.position = point2.position;
+        obj = EnemyManager.instance.Summon4();
+        obj.transform.position = point3.position;
+        obj = EnemyManager.instance.Summon2();
+        obj.transform.position = point4.position;
+        yield return new WaitForSeconds(1f);
+        obj = EnemyManager.instance.Summon2();
+        Debug.Log("asdf2");
+
+        obj.transform.position = point1.position;
+        obj = EnemyManager.instance.Summon2();
+        obj.transform.position = point2.position;
+        obj = EnemyManager.instance.Summon2();
+        obj.transform.position = point3.position;
+        obj = EnemyManager.instance.Summon4();
+        obj.transform.position = point4.position;
+        yield return new WaitForSeconds(1f);
+        obj = EnemyManager.instance.Summon2();
+        Debug.Log("asdf2");
 
         obj.transform.position = point1.position;
         obj = EnemyManager.instance.Summon2();
@@ -208,6 +227,7 @@ public class SummonPlan : MonoBehaviour
         obj.transform.position = point4.position;
         yield return new WaitForSeconds(1f);
         obj = EnemyManager.instance.Summon2();
+        Debug.Log("asdf2");
 
         obj.transform.position = point1.position;
         obj = EnemyManager.instance.Summon4();
@@ -218,6 +238,7 @@ public class SummonPlan : MonoBehaviour
         obj.transform.position = point4.position;
         yield return new WaitForSeconds(1f);
         obj = EnemyManager.instance.Summon2();
+        Debug.Log("asdf2");
 
         obj.transform.position = point1.position;
         obj = EnemyManager.instance.Summon4();
@@ -227,9 +248,12 @@ public class SummonPlan : MonoBehaviour
         obj = EnemyManager.instance.Summon4();
         obj.transform.position = point4.position;
         yield return new WaitForSeconds(1f);
+        Debug.Log("asdf2");
+
+        bosys.Spawn2();
     }
 
-    IEnumerator Patton3()
+    public IEnumerator Patton3()
     {
         GameObject obj = EnemyManager.instance.Summon3();
         obj.transform.position = point1.position;
@@ -250,6 +274,7 @@ public class SummonPlan : MonoBehaviour
         obj = EnemyManager.instance.Summon3();
         obj.transform.position = point4.position;
         yield return new WaitForSeconds(1f);
+        bosys.Spawn3();
     }
 
 }

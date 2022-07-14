@@ -21,12 +21,12 @@ public class EnemyManager : MonoBehaviour //利 罚待积己 内靛
     }
     public GameObject Summon3()
     {
-        GameObject obj = PoolManager.Instance.Summon("Enemy3").gameObject;
+        GameObject obj = PoolManager.Instance.Summon("Enemy3(Lion)").gameObject;
         return obj;
     }
     public GameObject Summon4()
     {
-        GameObject obj = PoolManager.Instance.Summon("Enemy4").gameObject;
+        GameObject obj = PoolManager.Instance.Summon("Enemy4(Girl)").gameObject;
         return obj;
     }
 }

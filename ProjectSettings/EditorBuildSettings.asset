@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/00.Scenes/Dev/Dongyeop/DongyeopStart.unity
     guid: 5de5cf28a09b7224a9101b824604c9f3
   - enabled: 1
-    path: Assets/00.Scenes/Dev/Dongyeop/Dongyeop.unity
-    guid: 2ffb4db59b7abd7459b3e39eb617dd86
+    path: Assets/00.Scenes/Dev/Sunmok/Sunmok.unity
+    guid: eebf93ad460e80541921048f4bcb575b
   - enabled: 1
     path: Assets/00.Scenes/Dev/Dongyeop/DongyeopDie.unity
     guid: 3785d328ea8962945b9558c039821790
+  - enabled: 1
+    path: Assets/00.Scenes/Dev/Sunmok/Clear.unity
+    guid: 61dfb5d51f25b7d4bb5ec9658e7d7010
   m_configObjects: {}

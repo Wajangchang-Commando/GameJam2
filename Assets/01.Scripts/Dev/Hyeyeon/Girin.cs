@@ -35,6 +35,8 @@ public class Girin : MonoBehaviour
     }
     private void OnDisable()
     {
+        BossPa.Instance.die2();
+
         HPbar.FirstBossDie();
     }
     private void Update()

@@ -26,4 +26,12 @@ public class Enemy2 : MonoBehaviour //하트눈 움직임
         else SPR.flipX = false;
         transform.position += dir*Time.deltaTime*speed;
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            collision.GetComponent<PlayerHP>().TalkDamage(1);
+            PoolManager.Instance.Returner(GetComponent<Poolable>());
+        }
+    }
 }

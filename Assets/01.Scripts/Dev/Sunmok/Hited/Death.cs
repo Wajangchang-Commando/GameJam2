@@ -12,12 +12,15 @@ public class Death : MonoBehaviour
     }
     private void OnDisable()
     {
+
         Viewer.SecondBossDie();
     }
     private void Update()
     {
         if(HP.CurrentHP <= 0)
         {
+            BossPa.Instance.die1();
+
             gameObject.SetActive(false);
         }
     }
