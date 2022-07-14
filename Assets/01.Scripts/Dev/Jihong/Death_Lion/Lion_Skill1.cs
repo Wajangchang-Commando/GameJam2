@@ -5,7 +5,7 @@ using UnityEngine;
 public class Lion_Skill1 : MonoBehaviour //책날리는거
 {
     Vector3 dir;
-    float speed = 3;
+    float speed = 7;
     float currenttime=0;
     void Start()
     {

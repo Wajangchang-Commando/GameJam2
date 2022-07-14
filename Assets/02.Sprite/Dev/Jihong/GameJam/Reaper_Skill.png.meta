@@ -1,13 +1,31 @@
 fileFormatVersion: 2
-guid: f46ef6725e1437f44974aa31a33e852d
+guid: 9e03ec401a475a249b87f6f84b66e029
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3160275818876372059
-    second: Death_Lion_0
+      213: 9121680587981828542
+    second: Reaper_Skill_0
   - first:
-      213: -7190328848056615874
-    second: Death_Lion_1
+      213: 310588205580816152
+    second: Reaper_Skill_1
+  - first:
+      213: -5401750051109805793
+    second: Reaper_Skill_2
+  - first:
+      213: 1758162426181778309
+    second: Reaper_Skill_3
+  - first:
+      213: -5871536525251478036
+    second: Reaper_Skill_4
+  - first:
+      213: -8873904230715032613
+    second: Reaper_Skill_5
+  - first:
+      213: 3230674022600860017
+    second: Reaper_Skill_6
+  - first:
+      213: 1143455896839915959
+    second: Reaper_Skill_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,108 +127,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Death_Lion_0
+      name: Reaper_Skill_1
       rect:
         serializedVersion: 2
-        x: 20
-        y: 90
-        width: 70
-        height: 90
-      alignment: 9
-      pivot: {x: 0.5000006, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5402680d1e8bdb20800000000000000
-      internalID: 3160275818876372059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Death_Lion_1
-      rect:
-        serializedVersion: 2
-        x: 19
+        x: 58
         y: 0
-        width: 261
+        width: 262
         height: 320
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -9.5, y: 160}
-        - {x: -9.5, y: 150}
-        - {x: -19.5, y: 150}
-        - {x: -19.5, y: 130}
-        - {x: -29.5, y: 130}
-        - {x: -29.5, y: 100}
-        - {x: -49.5, y: 100}
-        - {x: -49.5, y: 90}
-        - {x: -69.5, y: 90}
-        - {x: -69.5, y: 80}
-        - {x: -79.5, y: 80}
-        - {x: -79.5, y: 50}
-        - {x: -69.5, y: 50}
-        - {x: -69.5, y: 40}
-        - {x: -60.5, y: 40}
-        - {x: -49.5, y: 40}
-        - {x: -49.5, y: 30}
-        - {x: -39.5, y: 30}
-        - {x: -39.5, y: 20}
-        - {x: -49.5, y: 20}
-        - {x: -49.5, y: 10}
-        - {x: -29.5, y: 10}
-        - {x: -29.5, y: 0}
-        - {x: -39.5, y: 0}
-        - {x: -39.5, y: -10}
-        - {x: -29.5, y: -10}
-        - {x: -29.5, y: -20}
-        - {x: -39.5, y: -20}
-        - {x: -39.5, y: -30}
-        - {x: -49.5, y: -30}
-        - {x: -49.5, y: -60}
-        - {x: -39.5, y: -60}
-        - {x: -39.5, y: -70}
-        - {x: -29.5, y: -70}
-        - {x: -29.5, y: -90}
-        - {x: -39.5, y: -90}
-        - {x: -39.5, y: -110}
-        - {x: -49.5, y: -110}
-        - {x: -49.5, y: -120}
-        - {x: -59.5, y: -120}
-        - {x: -59.5, y: -140}
-        - {x: -49.5, y: -140}
-        - {x: -49.5, y: -150}
-        - {x: -29.5, y: -150}
-        - {x: -29.5, y: -140}
-        - {x: -9.5, y: -140}
-        - {x: -9.5, y: -160}
-        - {x: 120.5, y: -160}
-        - {x: 120.5, y: 50}
-        - {x: 130.5, y: 50}
-        - {x: 130.5, y: 80}
-        - {x: 81.5, y: 151}
-        - {x: 70.5, y: 160}
-      - - {x: -69.5, y: 10}
-        - {x: -69.5, y: 20}
-        - {x: -119.5, y: 20}
-        - {x: -119.5, y: 10}
-        - {x: -129.5, y: 10}
-        - {x: -129.5, y: -60}
-        - {x: -119.5, y: -60}
-        - {x: -119.5, y: -70}
-        - {x: -69.5, y: -70}
-        - {x: -69.5, y: -60}
-        - {x: -59.5, y: -60}
-        - {x: -59.5, y: 10}
-      tessellationDetail: 0.02
+      physicsShape: []
+      tessellationDetail: 0
       bones: []
-      spriteID: e3c77593202d63c90800000000000000
-      internalID: -7190328848056615874
+      spriteID: 81f0211d35e6f4400800000000000000
+      internalID: 310588205580816152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Skill_2
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 280
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11e62eb2f02905b0800000000000000
+      internalID: -5401750051109805793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Skill_3
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 0
+        width: 290
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58bf006596f366810800000000000000
+      internalID: 1758162426181778309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Skill_5
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 0
+        width: 300
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbf46d3e1f89d480800000000000000
+      internalID: -8873904230715032613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Skill_6
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 0
+        width: 310
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171e43e18e8a5dc20800000000000000
+      internalID: 3230674022600860017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Skill_7
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b90873741f5edf00800000000000000
+      internalID: 1143455896839915959
       vertices: []
       indices: 
       edges: []

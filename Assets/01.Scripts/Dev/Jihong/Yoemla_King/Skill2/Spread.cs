@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spread : MonoBehaviour  //얼음 움직임
 {
     Vector3 dir;
-    float speed=4;
+    float speed=6;
 
     public void SetDerection(Vector3 direction)
     {

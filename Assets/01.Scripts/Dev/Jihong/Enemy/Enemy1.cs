@@ -10,16 +10,16 @@ public class Enemy1 : MonoBehaviour //하회탈 날리는 사람의 하회탈날리는 코드
     float speed = 1;
     float x, y;
     bool onFire=false;
+    GameObject target;
     void Start()
     {
         StartCoroutine(Fire());
-        GameObject target = GameObject.Find("Player");
+        target = GameObject.Find("Player");
         dir = target.transform.position - transform.position;
         dir.Normalize();
     }
     void Update()
     {
-        GameObject target = GameObject.Find("Player");
         dir = target.transform.position - transform.position;
         x = dir.x;
         y=dir.y;
