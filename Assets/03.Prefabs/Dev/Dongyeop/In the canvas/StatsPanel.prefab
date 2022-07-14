@@ -32,9 +32,9 @@ RectTransform:
   m_Father: {fileID: 1482035088953885312}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -128.2}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1482035088187989748
@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 1482035088311120769}
   - component: {fileID: 1482035088311120768}
   - component: {fileID: 1482035088311120766}
+  - component: {fileID: 362342529}
   m_Layer: 5
   m_Name: StatsPanel
   m_TagString: Untagged
@@ -175,6 +176,26 @@ MonoBehaviour:
   GunAdvantageUpBTN: {fileID: 1482035089929707598}
   GundamageUpBTN: {fileID: 1482035089360251116}
   PlayerHPnowHPUpBTN: {fileID: 1482035088828985663}
+  statsPoint: 0
+--- !u!114 &362342529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482035088311120770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99ac6d26361fbbe4a859d989c01e36aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BowMinAdv: 0
+  BowMaxAdv: 0
+  KniAdv: 0
+  SpeAdv: 0
+  GunAdv: 0
+  Gundel: 0
+  HpAdv: 0
 --- !u!1 &1482035088828985663
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,9 +471,9 @@ RectTransform:
   m_Father: {fileID: 1482035088953885312}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -354.59998}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1482035089062725050
@@ -529,9 +550,9 @@ RectTransform:
   m_Father: {fileID: 1482035088953885312}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -694.2}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1482035089089091038
@@ -1004,9 +1025,9 @@ RectTransform:
   m_Father: {fileID: 1482035088953885312}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -15}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1482035089429672740
@@ -1215,9 +1236,9 @@ RectTransform:
   m_Father: {fileID: 1482035088953885312}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -467.8}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1482035089584834997
@@ -1504,9 +1525,9 @@ RectTransform:
   m_Father: {fileID: 1482035088953885312}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -241.4}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1482035089775187338
@@ -1583,9 +1604,9 @@ RectTransform:
   m_Father: {fileID: 1482035088953885312}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -581}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1482035089879972408
@@ -1629,7 +1650,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uCD1D \uAE30\uBCF8 \uB370\uBBF8\uC9C0 \uAC10\uC18C"
+  m_Text: "\uCD1D \uAE30\uBCF8 \uB370\uBBF8\uC9C0 \uC99D\uAC00"
 --- !u!1 &1482035089929707598
 GameObject:
   m_ObjectHideFlags: 0
