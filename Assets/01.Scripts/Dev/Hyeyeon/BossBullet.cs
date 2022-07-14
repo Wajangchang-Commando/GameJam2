@@ -19,12 +19,12 @@ public class BossBullet : MonoBehaviour
         this.direction = direction;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player") // 만약 태그가 Player라면
+        if (collision.CompareTag("Player"))
         {
-            Destroy(collision.gameObject); // 그 오브젝트를 파괴한다.
-            Destroy(gameObject); // 나 자신도 파괴한다.
+            collision.GetComponent<PlayerHP>().TalkDamage(2);
+            PoolManager.Instance.Returner(GetComponent<Poolable>());
         }
     }
 }

@@ -38,7 +38,7 @@ public class Ice_Core : MonoBehaviour
     {
         if (other.gameObject.name.Contains("Player"))
         {
-            Destroy(other.gameObject);
+            other.GetComponent<PlayerHP>().TalkDamage(2);
             Destroy(gameObject);
         }
     }

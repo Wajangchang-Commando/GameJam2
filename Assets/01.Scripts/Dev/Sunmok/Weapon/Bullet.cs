@@ -18,5 +18,10 @@ public class Bullet : MonoBehaviour
             collision.GetComponent<EnemyHP>().EnemyAYA(damage);
             PoolManager.Instance.Returner(GetComponent<Poolable>());
         }
+        if (collision.CompareTag("Boss"))
+        {
+            collision.GetComponent<BossHP>().TalkDamage(damage);
+            PoolManager.Instance.Returner(GetComponent<Poolable>());
+        }
     }
 }

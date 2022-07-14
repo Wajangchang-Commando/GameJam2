@@ -8,7 +8,7 @@ public class Lion_Skil2 : MonoBehaviour //주변 영혼 아우라 소환
     {
         if (collision.gameObject.name.Contains("Player"))
         {
-            Destroy(collision.gameObject);
+            collision.GetComponent<PlayerHP>().TalkDamage(1);
         }
     }
 }

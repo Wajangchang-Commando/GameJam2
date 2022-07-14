@@ -12,11 +12,18 @@ public class PlayerMove : MonoBehaviour
     {
         Move();
         Flip();
+        MoveFix();
         if (PlayerSkillChanger.Instance.nowNum == 3)
         {
             Speed = 10 + StatManager.Instance.SpeAdv;
         }
         else Speed = 10;
+    }
+    void MoveFix()
+    {
+        float x = Mathf.Clamp(transform.position.x, -15, 14.5f);
+        float y = Mathf.Clamp(transform.position.y, -9, 10);
+        transform.position = new Vector3(x, y);
     }
     private void Move()
     {

@@ -15,9 +15,11 @@ GameObject:
   - component: {fileID: 5051322567303158342}
   - component: {fileID: 4629729262104818037}
   - component: {fileID: 769937731933721304}
+  - component: {fileID: 434233354}
+  - component: {fileID: 434233355}
   m_Layer: 0
   m_Name: Boss
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,6 +182,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &434233354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699902499043897345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f28d8b0bbd44ef14da084f219ef11c4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHP: 200
+  bossHP: 0
+--- !u!114 &434233355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699902499043897345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f607147f41b983d4887e6bf3ee99afb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: {fileID: 434233354}
+  Viewer: {fileID: 0}
 --- !u!1 &699902499253527086
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,7 +255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &699902499677170764
 Transform:
   m_ObjectHideFlags: 0

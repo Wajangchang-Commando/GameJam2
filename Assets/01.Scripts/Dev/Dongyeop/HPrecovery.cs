@@ -11,9 +11,10 @@ public class HPrecovery : MonoBehaviour  // 플레이어를 회복시키는 아이템에 들어�
         _playerHP = GameObject.Find("Player").GetComponent<PlayerHP>();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         _playerHP.nowHP++;
-        //PoolManager.Instance.Returner(GetComponent<Poolable>());
+        PoolManager.Instance.Returner(GetComponent<Poolable>());
+
     }
 }

@@ -12,6 +12,8 @@ public class Girin : MonoBehaviour
     [SerializeField] private float waitingTime; // 총알이 나오고 딜레이 시간
 
     private float speed;
+    [SerializeField] BossHPViewer HPbar;
+    [SerializeField] BossHP HP;
 
     List<Transform> bl = new List<Transform>();
     [SerializeField] private SpriteRenderer spriteRenderer;
@@ -27,7 +29,14 @@ public class Girin : MonoBehaviour
 
         StartCoroutine(Fire(10)); // shot를 실행한다.
     }
-
+    private void OnEnable()
+    {
+        StartCoroutine(HPbar.FirstBossSpawn());
+    }
+    private void OnDisable()
+    {
+        HPbar.FirstBossDie();
+    }
     private void Update()
     {
         timer += Time.deltaTime; // timer를 일정한 프레임으로 만든다.
@@ -41,6 +50,10 @@ public class Girin : MonoBehaviour
         x = dir.x;
         y = dir.y;
         dir.Normalize();
+        if(HP.CurrentHP <= 0)
+        {
+            gameObject.SetActive(false);
+        }
 
         if ((Mathf.Abs(x) + 1.5f * Mathf.Abs(y) <= 10))
         {
@@ -71,7 +84,7 @@ public class Girin : MonoBehaviour
             Vector3 position = new Vector3(Mathf.Cos(value), Mathf.Sin(value)) * 2;
             position += transform.position;
 
-            var bullet = Instantiate(_bullet); // 총알 생성
+            var bullet = PoolManager.Instance.Summon(_bullet.name); // 총알 생성
 
             bullet.transform.position = position;
 
@@ -93,9 +106,8 @@ public class Girin : MonoBehaviour
 
         for (int i = 0; i < 360; i += 13)
         {
-            var temp = Instantiate(_bullet); // 총알 생성
+            var temp = PoolManager.Instance.Summon(_bullet.name); // 총알 생성
 
-            Destroy(temp, 5f); // 5초후 삭제
 
             Vector2 positionsBullet = new Vector2(this.gameObject.transform.position.x, this.gameObject.transform.position.y);
 
@@ -134,10 +146,9 @@ public class Girin : MonoBehaviour
         for (int i = 0; i < 360; i += 13)
         {
             //총알 생성
-            GameObject temp = Instantiate(_bulletNTN);
+            Poolable temp = PoolManager.Instance.Summon(_bulletNTN.name);
 
             //2초마다 삭제
-            Destroy(temp, 2f);
             Vector2 positionsBullet = new Vector2(this.gameObject.transform.position.x, this.gameObject.transform.position.y);
 
             //Vector2 positionsBullet = new Vector2(this.gameObject.transform.position.x, this.gameObject.transform.position.y);
