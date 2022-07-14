@@ -7,6 +7,7 @@ public class BossBullet : MonoBehaviour
 
     void Start()
     {
+        float a;
         
     }
 
