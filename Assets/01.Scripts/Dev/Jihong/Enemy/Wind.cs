@@ -36,8 +36,7 @@ public class Wind : MonoBehaviour
     {
         if (other.gameObject.name.Contains("Player"))
         {
-            Destroy(other.gameObject);
-            Destroy(gameObject);
+            PoolManager.Instance.Returner(gameObject.GetComponent<Poolable>());
         }
     }
 }

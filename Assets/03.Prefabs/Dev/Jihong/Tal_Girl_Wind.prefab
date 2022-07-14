@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 176009223459616552}
   - component: {fileID: -8696491387193714840}
   - component: {fileID: 1759087485950394321}
+  - component: {fileID: -3135673281605889445}
   m_Layer: 0
   m_Name: Tal_Girl_Wind
   m_TagString: Untagged
@@ -199,3 +200,15 @@ PolygonCollider2D:
       - {x: 1.01, y: -0.26999998}
       - {x: 1.02, y: -0.13}
       - {x: 1.02, y: 0.42}
+--- !u!114 &-3135673281605889445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3589107173017535854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc42b2c55efdc5a48ba288f85285dff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

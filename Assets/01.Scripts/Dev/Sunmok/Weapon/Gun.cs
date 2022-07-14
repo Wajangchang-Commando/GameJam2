@@ -26,6 +26,7 @@ public class Gun : MonoBehaviour
             if(isshoot == false)
             {
                 StartCoroutine(shoot());
+
             }
         }
     }
@@ -39,6 +40,11 @@ public class Gun : MonoBehaviour
         obj.transform.rotation = transform.rotation;
         obj.transform.position = firepos.position;
         yield return new WaitForSeconds(Delay);
+        isshoot = false;
+
+    }
+    private void OnEnable()
+    {
         isshoot = false;
     }
 

@@ -11,6 +11,7 @@ public class Arrow : MonoBehaviour
     {
         Damage = 1;
         Count = 3;
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

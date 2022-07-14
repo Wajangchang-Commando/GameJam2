@@ -39,8 +39,8 @@ public class Enemy1 : MonoBehaviour
         while (true)
         {
             if (onFire) 
-            { 
-            GameObject Bullet = Instantiate(Hahoetal);
+            {
+                Poolable Bullet = PoolManager.Instance.Summon("HaHoeTal");
                 Bullet.transform.position = transform.position;             
             }
             yield return new WaitForSeconds(Random.Range(1.5f, 2f));

@@ -9,8 +9,7 @@ public class BulletBound : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Knife"))
         {
-            Debug.Log("ASdf");
-            GetComponent<HaHoeTal>().vanghyang = -5;
+            PoolManager.Instance.Returner(gameObject.GetComponent<Poolable>());
         }
     }
 }

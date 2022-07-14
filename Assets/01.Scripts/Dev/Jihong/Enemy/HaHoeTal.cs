@@ -35,8 +35,7 @@ public class HaHoeTal : MonoBehaviour
     {
         if (other.gameObject.name.Contains("Player"))
         {
-            Destroy(other.gameObject);
-            Destroy(gameObject);
+            PoolManager.Instance.Returner(GetComponent<Poolable>());
         }
     }
 }
