@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Bow : MonoBehaviour
 {
-    [SerializeField] float MaxPow;
+    public float MaxPow;
     [SerializeField] float NPow;
-    [SerializeField] float CPow;
+    public float CPow;
+    public float MinPow;
     [SerializeField] Animator anim;
     [SerializeField] Vector3 point;
     [SerializeField] private GameObject Arrow;
@@ -28,7 +29,7 @@ public class Bow : MonoBehaviour
             nowA.transform.position = transform.position;
             nowA.transform.rotation = transform.rotation;
             NPow += CPow * Time.deltaTime;
-            NPow = Mathf.Clamp(NPow, 5, MaxPow);
+            NPow = Mathf.Clamp(NPow, MinPow, MaxPow);
             anim.SetBool("Charging", true);
             nowA.GetComponent<Arrow>().Setting();
         }

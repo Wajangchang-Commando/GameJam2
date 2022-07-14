@@ -23,11 +23,17 @@ public class PlayerSkillChanger : MonoBehaviour // Q, E를 누르면 사용 가능 스킬�
     [SerializeField] private GameObject Knife;
     [SerializeField] private GameObject Bow;
 
+    public static PlayerSkillChanger Instance;
     public int nowNum = 1;
     private int _qNum = 2;
     private int _eNum = 3;
     private int _reset = 0;
     //1 = 건, 
+
+    private void Awake()
+    {
+        Instance = this;
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))

@@ -9,6 +9,10 @@ public class Gun : MonoBehaviour
     [SerializeField] private float angle;
     [SerializeField] private Transform firepos;
     [SerializeField] private bool isshoot = false;
+    public float Delay;
+    public float Damage;
+    public float Advantage;
+
     void Update()
     {
         Gunturn();
@@ -31,9 +35,10 @@ public class Gun : MonoBehaviour
         Debug.Log("Fire");
         Poolable obj = PoolManager.Instance.Summon("Bullet");
         obj.GetComponent<Bullet>().dir = (point - transform.position).normalized;
+        obj.GetComponent<Bullet>().damage = (int)(Damage + Advantage);
         obj.transform.rotation = transform.rotation;
         obj.transform.position = firepos.position;
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(Delay);
         isshoot = false;
     }
 

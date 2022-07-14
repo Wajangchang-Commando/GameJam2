@@ -6,12 +6,18 @@ public class PlayerMove : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rigidbody;
     [SerializeField] private SpriteRenderer SPR;
-    [SerializeField] private float Speed;
+    public float Speed;
+    public float Advantage;
     [SerializeField] private Animator animator;
     private void Update()
     {
         Move();
         Flip();
+        if (PlayerSkillChanger.Instance.nowNum == 3)
+        {
+            Speed = 10 + Advantage;
+        }
+        else Speed = 10;
     }
     private void Move()
     {

@@ -11,7 +11,7 @@ public class Knife : MonoBehaviour
     [SerializeField] private float angle;
     [SerializeField] private Transform firepos;
     [SerializeField] private PolygonCollider2D coll;
-    [SerializeField] private int Damage;
+    public int Damage;
     void Update()
     {
         Gunturn();
