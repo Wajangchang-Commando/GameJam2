@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StatsUpgrade : MonoBehaviour
+public class StatsUpgrade : MonoBehaviour //스텟 업그래이드를 할 수 있습니다.
 {
     [SerializeField] private GameObject KnifeDamageUpBTN;
     [SerializeField] private GameObject KnifeAdvantageUpBTN;
