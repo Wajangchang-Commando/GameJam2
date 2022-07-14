@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StatsPanel : MonoBehaviour
+public class StatsPanel : MonoBehaviour // TAB을 누르면 STATS 판넬이 나와용 
 {
     [SerializeField] private GameObject statsMenu;
 

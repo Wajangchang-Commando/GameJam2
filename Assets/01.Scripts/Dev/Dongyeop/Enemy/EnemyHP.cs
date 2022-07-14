@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHP : MonoBehaviour
+public class EnemyHP : MonoBehaviour //말 그대로 에너미에 들어갈 HP, 풀링이 필요합니다.
 {
     [SerializeField] private int _maxEnemyHP;
 
