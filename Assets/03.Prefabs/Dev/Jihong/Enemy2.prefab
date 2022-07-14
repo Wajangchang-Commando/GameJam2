@@ -14,9 +14,11 @@ GameObject:
   - component: {fileID: 9131972432031353365}
   - component: {fileID: 9131972432031353364}
   - component: {fileID: 2107275741205841955}
-  m_Layer: 0
+  - component: {fileID: 4361469170801683800}
+  - component: {fileID: -3311937259476064277}
+  m_Layer: 8
   m_Name: Enemy2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 9131972432031353363}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.6, y: -0.8, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -183,3 +185,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aef26ca8db913cf4d9dd718bab711e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4361469170801683800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131972432031353363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc42b2c55efdc5a48ba288f85285dff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-3311937259476064277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131972432031353363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25aa201a1eb04e24f9610509a5be44c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxEnemyHP: 2

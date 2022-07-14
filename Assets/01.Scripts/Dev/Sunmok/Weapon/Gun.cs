@@ -8,6 +8,11 @@ public class Gun : MonoBehaviour
     [SerializeField]Vector3 point;
     [SerializeField] private float angle;
     [SerializeField] private Transform firepos;
+    [SerializeField] private bool isshoot = false;
+    public float Delay;
+    public float Damage;
+    public float Advantage;
+
     void Update()
     {
         Gunturn();
@@ -18,11 +23,23 @@ public class Gun : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Poolable obj = PoolManager.Instance.Summon("Bullet");
-            obj.GetComponent<Bullet>().dir = (point - transform.position).normalized;
-            obj.transform.rotation = transform.rotation;
-            obj.transform.position = firepos.position;
+            if(isshoot == false)
+            {
+                StartCoroutine(shoot());
+            }
         }
+    }
+    IEnumerator shoot()
+    {
+        isshoot = true;
+        Debug.Log("Fire");
+        Poolable obj = PoolManager.Instance.Summon("Bullet");
+        obj.GetComponent<Bullet>().dir = (point - transform.position).normalized;
+        obj.GetComponent<Bullet>().damage = (int)(Damage + Advantage);
+        obj.transform.rotation = transform.rotation;
+        obj.transform.position = firepos.position;
+        yield return new WaitForSeconds(Delay);
+        isshoot = false;
     }
 
     void Gunturn()
