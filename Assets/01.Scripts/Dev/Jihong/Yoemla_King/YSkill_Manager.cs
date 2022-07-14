@@ -14,6 +14,6 @@ public class YSkill_Manager : MonoBehaviour
     }
     IEnumerator Skill1()
     {
-
+        yield return null;
     }
 }
