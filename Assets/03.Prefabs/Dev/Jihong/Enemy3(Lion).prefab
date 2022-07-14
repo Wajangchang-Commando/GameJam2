@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 4765222291121580400}
   - component: {fileID: 4765222291121580407}
   - component: {fileID: 203350824835317557}
+  - component: {fileID: 3069474024898055350}
   m_Layer: 8
   m_Name: Enemy3(Lion)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,6 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32eccaf516ebd44190d7705435d6ecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
   interacttime: 0
 --- !u!50 &4765222291121580407
 Rigidbody2D:
@@ -209,3 +211,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3069474024898055350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4765222291121580404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25aa201a1eb04e24f9610509a5be44c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxEnemyHP: 6
+  _curEnemyHP: 0
