@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BossHPViewer : MonoBehaviour
+public class BossHPViewer : MonoBehaviour //silde에 들어갈 친구입니다. 만약 문제 생기면 "_backGround.color = Color.clear;" "_backGround.color = Color.white;" 이거 먼저 없애주세요.
 {
     [Header ("각종 보스들")]
     [SerializeField] private BossHP _firstbossHP;

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerSkillChanger : MonoBehaviour // Q, E를 누르면 사용 가능 스킬이 바뀝니다.
+public class PlayerSkillChanger : MonoBehaviour // Q, E를 누르면 사용 가능 스킬이 바뀝니다. ??ワ??
 {
     #region 스킬 표시될 것들 SerializeField로 받아온것들
     [Header ("Player Skill Now")]
