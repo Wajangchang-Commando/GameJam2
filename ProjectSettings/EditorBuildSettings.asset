@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00.Scenes/Dev/Dongyeop/Dongyeop.unity
     guid: 2ffb4db59b7abd7459b3e39eb617dd86
+  - enabled: 1
+    path: Assets/00.Scenes/Dev/Dongyeop/DongyeopDie.unity
+    guid: 3785d328ea8962945b9558c039821790
   m_configObjects: {}
