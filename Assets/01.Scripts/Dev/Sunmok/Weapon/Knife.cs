@@ -60,9 +60,7 @@ public class Knife : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            print(1);
             collision.GetComponent<EnemyHP>().EnemyAYA(Damage);
-            print(2);
         }
     }
 }

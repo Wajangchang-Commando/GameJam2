@@ -5,15 +5,20 @@ using UnityEngine;
 public class Enemy3 : MonoBehaviour
 {
     float speed = 8;
+    public int damage;
     GameObject target;
     Vector3 dir;
     public float interacttime=0;
     bool following=true;
+    Animator anim;
+    SpriteRenderer SPR;
     void Start()
     {
         target = GameObject.Find("Player");
         dir = target.transform.position - transform.position;
         dir.Normalize();
+        SPR=  GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
     void Update()
     {
@@ -36,10 +41,15 @@ public class Enemy3 : MonoBehaviour
             interacttime += Time.deltaTime;
             if(interacttime > 0.5)
             {
-                Destroy(collision.gameObject);
-                Destroy(gameObject);
+                anim.SetBool("Biting", true);
+                collision.gameObject.GetComponent<PlayerHP>().TalkDamage(damage);
+                interacttime = 0;
             }
         }
+    }
+    public void BiteEnd()
+    {
+        anim.SetBool("Biting", false);
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
@@ -55,6 +65,14 @@ public class Enemy3 : MonoBehaviour
         target = GameObject.Find("Player");
         dir = target.transform.position - transform.position;
         dir.Normalize();
+        if(dir.x > 0)
+        {
+            SPR.flipX = true;
+        }
+        else
+        {
+            SPR.flipX = false;
+        }
         yield return new WaitForSeconds(1);
         
     }
