@@ -250,6 +250,7 @@ GameObject:
   - component: {fileID: 319276340}
   - component: {fileID: 319276343}
   - component: {fileID: 319276342}
+  - component: {fileID: 319276344}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -313,6 +314,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statsMenu: {fileID: 362342524}
   statsState: 0
+--- !u!114 &319276344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319276339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a180040ecb3e11a4199cc9172c9cd9d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj1: {fileID: 0}
+  obj2: {fileID: 0}
+  obj3: {fileID: 0}
+  obj4: {fileID: 0}
+  obj5: {fileID: 0}
 --- !u!1 &362342524 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1482035088311120770, guid: 375f6f717c06faa4a8cfed74f6ac4b9a, type: 3}
@@ -323,6 +341,63 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1482035088311120771, guid: 375f6f717c06faa4a8cfed74f6ac4b9a, type: 3}
   m_PrefabInstance: {fileID: 1482035088503479294}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &371871340
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3815495313473474594, guid: 7690e3ff9f1c58d489ab152fcc041f2a, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815495313473474594, guid: 7690e3ff9f1c58d489ab152fcc041f2a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815495313473474594, guid: 7690e3ff9f1c58d489ab152fcc041f2a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815495313473474594, guid: 7690e3ff9f1c58d489ab152fcc041f2a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815495313473474594, guid: 7690e3ff9f1c58d489ab152fcc041f2a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815495313473474594, guid: 7690e3ff9f1c58d489ab152fcc041f2a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815495313473474594, guid: 7690e3ff9f1c58d489ab152fcc041f2a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815495313473474594, guid: 7690e3ff9f1c58d489ab152fcc041f2a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815495313473474594, guid: 7690e3ff9f1c58d489ab152fcc041f2a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815495313473474594, guid: 7690e3ff9f1c58d489ab152fcc041f2a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815495313473474594, guid: 7690e3ff9f1c58d489ab152fcc041f2a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815495313473474599, guid: 7690e3ff9f1c58d489ab152fcc041f2a, type: 3}
+      propertyPath: m_Name
+      value: HP++
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7690e3ff9f1c58d489ab152fcc041f2a, type: 3}
 --- !u!1001 &567385243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -330,6 +405,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 447305277535677126, guid: a876bec1593fe5242945b54ac1b16b0a, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2543135953682650492, guid: a876bec1593fe5242945b54ac1b16b0a, type: 3}
       propertyPath: m_Name
       value: Player
