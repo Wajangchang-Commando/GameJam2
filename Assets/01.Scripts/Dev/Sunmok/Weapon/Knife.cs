@@ -56,6 +56,10 @@ public class Knife : MonoBehaviour
         angle = Mathf.Atan2(Rot.y, Rot.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle);
     }
+    private void OnEnable()
+    {
+        IsAttack = false;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))

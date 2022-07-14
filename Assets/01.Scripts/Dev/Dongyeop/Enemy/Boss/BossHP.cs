@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossHP : MonoBehaviour
+public class BossHP : MonoBehaviour //보스HP slider에 들어갈 기본적인 HP입니다. 보스에 넣어주시면 됩니다.
 {
     [SerializeField] private int _maxHP = 300;
 

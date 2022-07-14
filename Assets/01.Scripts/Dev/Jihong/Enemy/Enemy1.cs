@@ -39,8 +39,8 @@ public class Enemy1 : MonoBehaviour //하회탈 날리는 사람의 하회탈날리는 코드
         while (true)
         {
             if (onFire) 
-            { 
-            GameObject Bullet = Instantiate(Hahoetal);
+            {
+                Poolable Bullet = PoolManager.Instance.Summon("HaHoeTal");
                 Bullet.transform.position = transform.position;             
             }
             yield return new WaitForSeconds(Random.Range(1.5f, 2f));
