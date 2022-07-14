@@ -11,7 +11,7 @@ public class PlayerHP : MonoBehaviour //플레이어에 들어갈 HP 스크립트입니다.
 
     private void Update()
     {
-        _maxHP = 10 + StatManager.Instance.HpAdv;
+        //_maxHP = 10 + StatManager.Instance.HpAdv;
     }
     public float MaxHP
     {

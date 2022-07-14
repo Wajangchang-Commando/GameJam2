@@ -6,9 +6,17 @@ public class BossBullet : MonoBehaviour
 {
     [SerializeField] private float speed; // 속도
 
+    Vector3 direction = Vector3.zero;
+
     void Update()
     {
-        transform.Translate(Vector2.right * speed * Time.deltaTime, Space.Self); // 주어진 방향벡터로 이동
+        if (direction != Vector3.zero)
+            transform.position += direction * speed * Time.deltaTime; // 주어진 방향벡터로 이동
+    }
+
+    public void SetDirection(Vector2 direction)
+    {
+        this.direction = direction;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
