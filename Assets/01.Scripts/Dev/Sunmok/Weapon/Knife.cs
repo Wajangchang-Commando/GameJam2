@@ -66,5 +66,9 @@ public class Knife : MonoBehaviour
         {
             collision.GetComponent<EnemyHP>().EnemyAYA(Damage + StatManager.Instance.KniAdv);
         }
+        if (collision.CompareTag("Boss"))
+        {
+            collision.GetComponent<BossHP>().TalkDamage(Damage + StatManager.Instance.KniAdv);
+        }
     }
 }

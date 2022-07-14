@@ -21,7 +21,7 @@ public class Spread : MonoBehaviour  //얼음 움직임
     {
         if (other.gameObject.name.Contains("Player"))
         {
-            Destroy(other.gameObject);
+            other.GetComponent<PlayerHP>().TalkDamage(1);
             Destroy(gameObject);
         }
     }

@@ -13,7 +13,7 @@ public class YSkill1_set : MonoBehaviour  //Ä®¿òÁ÷ÀÓ (follow)
     {
         if (other.gameObject.name.Contains("Player"))
         {
-            Destroy(other.gameObject);
+            other.GetComponent<PlayerHP>().TalkDamage(2);
             Destroy(gameObject);
         }
     }

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Bullet
+  - Knife
+  - Boss
+  - Girin
   layers:
   - Default
   - TransparentFX

@@ -20,6 +20,11 @@ public class Arrow : MonoBehaviour
             collision.GetComponent<EnemyHP>().EnemyAYA(Damage);
             Count--;
         }
+        if (collision.CompareTag("Boss"))
+        {
+            collision.GetComponent<BossHP>().TalkDamage(Damage);
+            Count--;
+        }
         if(Count < 1)
         {
             PoolManager.Instance.Returner(gameObject.GetComponent<Poolable>());

@@ -5,11 +5,14 @@ using UnityEngine;
 public class Yeomla_move : MonoBehaviour
 {
     Vector3 dir;
+    Animator animator;
     float speed = 1;
     float x, y;
+    bool hitt = false;
     GameObject target;
     void Start()
     {
+        animator = GetComponent<Animator>();
         target = GameObject.Find("Player");
         dir = target.transform.position - transform.position;
         dir.Normalize();
@@ -39,7 +42,22 @@ public class Yeomla_move : MonoBehaviour
     {
         if (collision.gameObject.name.Contains("Player"))
         {
-            Destroy(collision.gameObject);
+            animator.SetBool("Hitting", true);
+        }
+    }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            hitt = true;
+        }
+        else hitt = false;
+    }
+    public void Hitting()
+    {
+        if(hitt == true)
+        {
+            target.GetComponent<PlayerHP>().TalkDamage(2);
         }
     }
 }

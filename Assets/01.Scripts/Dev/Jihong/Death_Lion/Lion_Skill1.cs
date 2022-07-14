@@ -26,7 +26,7 @@ public class Lion_Skill1 : MonoBehaviour //책날리는거
     {
         if (collision.gameObject.name.Contains("Player"))
         {
-            Destroy(collision.gameObject);
+            collision.GetComponent<PlayerHP>().TalkDamage(1);
             Destroy(gameObject);
         }
     }

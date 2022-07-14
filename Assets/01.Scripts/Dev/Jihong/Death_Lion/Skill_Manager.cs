@@ -31,7 +31,10 @@ public class Skill_Manager : MonoBehaviour //사신 보스 스킬사용 및 사라짐
         dir = enemy.transform.position - player.transform.position;
         dir.Normalize();
         enemy.transform.position += -dir*4*Time.deltaTime;
-        skill2.transform.position = transform.position;
+        if(skill2 != null)
+        {
+            skill2.transform.position = transform.position;
+        }
         if (enemy.transform.position.x<=player.transform.position.x)
         {
             spriteRenderer.flipX = true;
