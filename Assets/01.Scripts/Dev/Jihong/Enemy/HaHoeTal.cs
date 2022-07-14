@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HaHoeTal : MonoBehaviour
+public class HaHoeTal : MonoBehaviour //하회탈 코드 - Destory 조심
 {
     public Vector3 dir;
     float speed=3;

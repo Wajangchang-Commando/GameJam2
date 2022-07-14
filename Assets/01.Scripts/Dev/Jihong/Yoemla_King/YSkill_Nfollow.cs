@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class YSkill_Nfollow : MonoBehaviour
+public class YSkill_Nfollow : MonoBehaviour   //Ä®¿òÁ÷ÀÓ (ufollow)
 {
     float speed = 6;
     void Update()

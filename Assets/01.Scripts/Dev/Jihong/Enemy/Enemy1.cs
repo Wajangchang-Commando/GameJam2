@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy1 : MonoBehaviour
+public class Enemy1 : MonoBehaviour //하회탈 날리는 사람의 하회탈날리는 코드
 {
     [SerializeField]
     GameObject Hahoetal;

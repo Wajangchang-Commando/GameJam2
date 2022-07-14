@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lion_Skill1 : MonoBehaviour
+public class Lion_Skill1 : MonoBehaviour //책날리는거
 {
     Vector3 dir;
     float speed = 3;

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class YSkill1_set : MonoBehaviour
+public class YSkill1_set : MonoBehaviour  //Ä®¿òÁ÷ÀÓ (follow)
 {
     float speed = 6;
     void Update()
