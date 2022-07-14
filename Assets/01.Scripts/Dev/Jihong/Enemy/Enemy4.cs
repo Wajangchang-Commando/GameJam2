@@ -41,7 +41,7 @@ public class Enemy4 : MonoBehaviour
         {
             if (onFire)
             {
-                GameObject Bullet = Instantiate(Hahoetal);
+                Poolable Bullet = PoolManager.Instance.Summon(Hahoetal.name);
                 Bullet.transform.position = transform.position;
             }
             yield return new WaitForSeconds(2-onlyonce);

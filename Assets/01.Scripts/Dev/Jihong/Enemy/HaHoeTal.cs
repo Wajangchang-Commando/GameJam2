@@ -8,6 +8,7 @@ public class HaHoeTal : MonoBehaviour
     float speed=3;
     GameObject target;
     public int vanghyang =1;
+    public int damage;
     void Start()
     {
         target = GameObject.Find("Player");
@@ -35,8 +36,8 @@ public class HaHoeTal : MonoBehaviour
     {
         if (other.gameObject.name.Contains("Player"))
         {
-            Destroy(other.gameObject);
-            Destroy(gameObject);
+            other.GetComponent<PlayerHP>().TalkDamage(damage);
+            PoolManager.Instance.Returner(GetComponent<Poolable>());
         }
     }
 }

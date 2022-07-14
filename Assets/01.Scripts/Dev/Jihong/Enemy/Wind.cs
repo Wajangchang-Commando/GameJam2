@@ -8,6 +8,7 @@ public class Wind : MonoBehaviour
     float speed = 3;
     GameObject target;
     public int vanghyang = 1;
+    public int damage;
     void Start()
     {
         target = GameObject.Find("Player");
@@ -36,8 +37,8 @@ public class Wind : MonoBehaviour
     {
         if (other.gameObject.name.Contains("Player"))
         {
-            Destroy(other.gameObject);
-            Destroy(gameObject);
+            other.GetComponent<PlayerHP>().TalkDamage(damage);
+            PoolManager.Instance.Returner(gameObject.GetComponent<Poolable>());
         }
     }
 }
