@@ -3076,7 +3076,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e08802f026072c4dad2f420bda83b46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _knifeADV: 0
+  KnifeDamageUpBTN: {fileID: 2027098438}
+  KnifeAdvantageUpBTN: {fileID: 1351298340}
+  BowMinPowUpBTN: {fileID: 402908339}
+  BowMaxPowUpBTN: {fileID: 676096168}
+  GunAdvantageUpBTN: {fileID: 1403325591}
+  GundamageUpBTN: {fileID: 1753167035}
+  PlayerHPnowHPUpBTN: {fileID: 1100031696}
 --- !u!114 &1811061916
 MonoBehaviour:
   m_ObjectHideFlags: 0
