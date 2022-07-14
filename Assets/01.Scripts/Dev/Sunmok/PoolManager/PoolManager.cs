@@ -12,6 +12,8 @@ public class PoolManager : MonoBehaviour
     public Poolable obj4;
     public Poolable obj5;
     public Poolable obj6;
+    public Poolable obj7;
+    public Poolable obj8;
     public static PoolManager Instance;
 
     private void Awake()
@@ -23,6 +25,8 @@ public class PoolManager : MonoBehaviour
         make(obj4);
         make(obj5);
         make(obj6);
+        make(obj7);
+        make(obj8);
     }
     public void make(Poolable pol)
     {

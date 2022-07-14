@@ -29,7 +29,7 @@ public class Bow : MonoBehaviour
             nowA.transform.position = transform.position;
             nowA.transform.rotation = transform.rotation;
             NPow += CPow * Time.deltaTime;
-            NPow = Mathf.Clamp(NPow, MinPow, MaxPow);
+            NPow = Mathf.Clamp(NPow, MinPow +StatManager.Instance.BowMinAdv, MaxPow + StatManager.Instance.BowMaxAdv);
             anim.SetBool("Charging", true);
             nowA.GetComponent<Arrow>().Setting();
         }

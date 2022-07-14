@@ -70,8 +70,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8437537358632984050}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4812503, y: -2.2398887, z: -5.470488}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8437537359700193669}
   m_Father: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 8437537359700193669}
   - component: {fileID: 8437537359700193668}
   - component: {fileID: 8437537359700193667}
-  - component: {fileID: 8437537359700193666}
+  - component: {fileID: 6703368899246157379}
   m_Layer: 0
   m_Name: Death_Lion
   m_TagString: Untagged
@@ -104,7 +104,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8437537359700193665}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.21, y: 4.72, z: 5.370488}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8437537358375178979}
@@ -183,8 +183,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &8437537359700193666
-PolygonCollider2D:
+--- !u!61 &6703368899246157379
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -196,7 +196,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.22016293, y: -0.1666205}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -206,56 +206,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 1.225, y: -1.3299999}
-      - {x: 1.225, y: -1.05}
-      - {x: 1.025, y: -0.84}
-      - {x: 0.945, y: -0.69}
-      - {x: 0.945, y: -0.19}
-      - {x: 0.85499996, y: -0.07}
-      - {x: 0.825, y: 0.17}
-      - {x: 0.91499996, y: 0.26}
-      - {x: 1.2149999, y: 0.35999998}
-      - {x: 1.305, y: 0.47}
-      - {x: 1.305, y: 0.84}
-      - {x: 0.965, y: 1.24}
-      - {x: 0.835, y: 1.24}
-      - {x: 0.84499997, y: 1.51}
-      - {x: 0.73499995, y: 1.5999999}
-      - {x: -0.114999995, y: 1.5999999}
-      - {x: -0.21499999, y: 1.5}
-      - {x: -0.515, y: 1}
-      - {x: -0.705, y: 0.94}
-      - {x: -0.815, y: 0.82}
-      - {x: -0.815, y: 0.47}
-      - {x: -0.72499996, y: 0.38}
-      - {x: -0.505, y: 0.22999999}
-      - {x: -0.555, y: 0.08}
-      - {x: -0.45499998, y: -0.01}
-      - {x: -0.45499998, y: -0.25}
-      - {x: -0.525, y: -0.29}
-      - {x: -0.53499997, y: -0.61}
-      - {x: -0.435, y: -0.71}
-      - {x: -0.435, y: -0.88}
-      - {x: -0.635, y: -1.18}
-      - {x: -0.635, y: -1.41}
-      - {x: -0.525, y: -1.52}
-      - {x: -0.285, y: -1.54}
-      - {x: -0.114999995, y: -1.42}
-      - {x: -0.114999995, y: -1.5999999}
-      - {x: 0.525, y: -1.5999999}
-      - {x: 0.60499996, y: -1.52}
-      - {x: 1.005, y: -1.52}
-      - {x: 1.125, y: -1.43}
-    - - {x: -0.635, y: 0.22}
-      - {x: -1.305, y: 0.22}
-      - {x: -1.305, y: -0.68}
-      - {x: -1.225, y: -0.71999997}
-      - {x: -0.645, y: -0.71999997}
-      - {x: -0.575, y: -0.63}
-      - {x: -0.575, y: 0.19999999}
-    - - {x: -0.265, y: -0.03}
-      - {x: -0.225, y: -0.03}
-      - {x: -0.225, y: -0.07}
-      - {x: -0.265, y: -0.07}
+  serializedVersion: 2
+  m_Size: {x: 1.1918615, y: 2.8667593}
+  m_EdgeRadius: 0

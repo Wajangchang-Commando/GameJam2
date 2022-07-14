@@ -5,7 +5,7 @@ using UnityEngine;
 public class HaHoeTal : MonoBehaviour //하회탈 코드 - Destory 조심
 {
     public Vector3 dir;
-    float speed=3;
+    float speed=7;
     GameObject target;
     public int vanghyang =1;
     public int damage;

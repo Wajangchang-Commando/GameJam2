@@ -5,9 +5,11 @@ using UnityEngine;
 public class Enemy2 : MonoBehaviour //하트눈 움직임 
 {
     Vector3 dir;
-    float speed = 2;
+    float speed = 5;
+    SpriteRenderer SPR;
     void Start()
     {
+        SPR = GetComponent<SpriteRenderer>();
         GameObject target = GameObject.Find("Player");
         dir = target.transform.position - transform.position;
         dir.Normalize();
@@ -17,6 +19,11 @@ public class Enemy2 : MonoBehaviour //하트눈 움직임
         GameObject target = GameObject.Find("Player");
         dir = target.transform.position - transform.position;
         dir.Normalize();
+        if (dir.x > 0)
+        {
+            SPR.flipX = true;
+        }
+        else SPR.flipX = false;
         transform.position += dir*Time.deltaTime*speed;
     }
 }

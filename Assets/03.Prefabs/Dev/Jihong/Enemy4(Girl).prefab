@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4085811639120654577}
   - component: {fileID: 7691566638847068068}
   - component: {fileID: 6675023940366627750}
+  - component: {fileID: 7138870712541646710}
   m_Layer: 8
   m_Name: Enemy4(Girl)
   m_TagString: Enemy
@@ -199,3 +200,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxEnemyHP: 3
   _curEnemyHP: 0
+--- !u!114 &7138870712541646710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4085811639120654578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc42b2c55efdc5a48ba288f85285dff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
