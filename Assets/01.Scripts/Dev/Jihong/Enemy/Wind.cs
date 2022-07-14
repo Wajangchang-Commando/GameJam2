@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wind : MonoBehaviour
+public class Wind : MonoBehaviour       //탈걸의 바람코드  - Destory 조심
 {
     public Vector3 dir;
     float speed = 3;

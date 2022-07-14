@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy3 : MonoBehaviour
+public class Enemy3 : MonoBehaviour //사자 움직임 및 데미지
 {
     float speed = 8;
     public int damage;

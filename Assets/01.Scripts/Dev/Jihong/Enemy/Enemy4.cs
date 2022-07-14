@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy4 : MonoBehaviour
+public class Enemy4 : MonoBehaviour // 탈걸(?) 움직임 및 공격
 {
     [SerializeField]
     GameObject Hahoetal;

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spread : MonoBehaviour
+public class Spread : MonoBehaviour  //얼음 움직임
 {
     Vector3 dir;
     float speed=4;

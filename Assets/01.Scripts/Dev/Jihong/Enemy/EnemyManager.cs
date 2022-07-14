@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyManager : MonoBehaviour
+public class EnemyManager : MonoBehaviour //利 罚待积己 内靛
 {
     float currenttime = 0;
     float spawntime = 1.5f;

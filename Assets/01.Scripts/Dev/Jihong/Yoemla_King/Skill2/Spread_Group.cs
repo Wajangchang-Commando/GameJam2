@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spread_Group : MonoBehaviour
+public class Spread_Group : MonoBehaviour //얼음 퍼지는거 rotation 바꾸는거
 {
     float currenttime;
 

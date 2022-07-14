@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Skill_Manager : MonoBehaviour
+public class Skill_Manager : MonoBehaviour //사신 보스 스킬사용 및 사라짐
 {
     [SerializeField]
     GameObject Skill1;
