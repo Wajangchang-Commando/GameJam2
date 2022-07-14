@@ -6,11 +6,18 @@ public class PauseMenu : MonoBehaviour
 {
     [SerializeField] private GameObject _pauseMenu;
 
+    private StatsPanel _statsPanel;
+
     public bool pauseState = false;
+
+    private void Awake()
+    {
+        _statsPanel = GetComponent<StatsPanel>();
+    }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && _statsPanel.statsState == false)
         {
             if (pauseState == false)
                 PauseOn();
