@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class StatsUpgrade : MonoBehaviour
 {
+    [SerializeField] private GameObject KnifeDamageUpBTN;
+    [SerializeField] private GameObject KnifeAdvantageUpBTN;
+    [SerializeField] private GameObject BowMinPowUpBTN;
+    [SerializeField] private GameObject BowMaxPowUpBTN;
+    [SerializeField] private GameObject GunAdvantageUpBTN;
+    [SerializeField] private GameObject GundamageUpBTN;
+    [SerializeField] private GameObject PlayerHPnowHPUpBTN;
+
     private Knife _knife;
     private PlayerMove _playerMove;
     private Bow _bow;
@@ -11,11 +19,12 @@ public class StatsUpgrade : MonoBehaviour
     private PlayerHP _playerHP;
 
     private int _knifeDam = 0;
-    public int _knifeADV = 0;
+    private int _knifeADV = 0;
     private int _bowMin = 0;
     private int _bowMax = 0;
     private int _gunADV = 0;
     private int _gunDam = 0;
+    private int _playermaxHP = 0;
 
     private void Awake()
     {
@@ -24,6 +33,24 @@ public class StatsUpgrade : MonoBehaviour
         _bow = GameObject.Find("Bow").GetComponent<Bow>();
         _gun = GameObject.Find("Gun").GetComponent<Gun>();
         _playerHP = GameObject.Find("Player").GetComponent<PlayerHP>();
+    }
+
+    private void Update()
+    {
+        if (_knifeDam >= 7)
+            Destroy(KnifeDamageUpBTN);
+        if (_knifeADV >= 4)
+            Destroy(KnifeAdvantageUpBTN);
+        if (_bowMin >= 3)
+            Destroy(BowMinPowUpBTN);
+        if (_bowMax >= 3)
+            Destroy(BowMinPowUpBTN);
+        if (_gunADV >= 3)
+            Destroy(GunAdvantageUpBTN);
+        if (_gunDam >= 2)
+            Destroy(GundamageUpBTN);
+        if (_playermaxHP >= 4)
+            Destroy(PlayerHPnowHPUpBTN);
     }
 
 
@@ -83,6 +110,10 @@ public class StatsUpgrade : MonoBehaviour
 
     public void PlayerHPnowHPUp()
     {
-        _playerHP.nowHP++;
+        if (_playermaxHP <= 4)
+        {
+            _playerHP._maxHP++;
+            _playermaxHP++;
+        }
     }
 }
