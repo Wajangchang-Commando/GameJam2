@@ -10,6 +10,7 @@ public class Enemy4 : MonoBehaviour
     float speed = 1.5f;
     float x, y;
     bool onFire = false;
+    float onlyonce=0.5f;
     void Start()
     {
         StartCoroutine(Fire());
@@ -43,7 +44,8 @@ public class Enemy4 : MonoBehaviour
                 GameObject Bullet = Instantiate(Hahoetal);
                 Bullet.transform.position = transform.position;
             }
-            yield return new WaitForSeconds(Random.Range(2f, 2.5f));
+            yield return new WaitForSeconds(2-onlyonce);
+            onlyonce = 0;
         }
     }
 }
