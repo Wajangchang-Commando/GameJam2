@@ -13,7 +13,7 @@ public class StatsUpgrade : MonoBehaviour //스텟 업그래이드를 할 수 있습니다.
     [SerializeField] private GameObject GundamageUpBTN;
     [SerializeField] private GameObject PlayerHPnowHPUpBTN;
 
-    [SerializeField] private Text _txt;
+    [SerializeField] private Text _txt; //이건 스텟에 쓸 TXT 넣는거 
 
 
     public float statsPoint = 0;
