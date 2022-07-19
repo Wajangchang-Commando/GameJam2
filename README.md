@@ -43,7 +43,7 @@
 <br/>
 
 ## 6. 플레이영상 및 다운로드 
-  >##### 개발 중입니다.
+  >##### 다운로드를 하시려면 [이곳][다운로드]을 눌러주세요.
 
 <br/>
 
@@ -67,3 +67,5 @@
 [박규현학교포폴]: http://ggm.gondr.net/user/profile/253 "경기게임마이스터고등학교 포트폴리오 사이트로 이동됩니다."
 [김혜연학교포폴]: http://ggm.gondr.net/user/profile/203 "경기게임마이스터고등학교 포트폴리오 사이트로 이동됩니다."
 [오지홍학교포폴]: http://ggm.gondr.net/user/profile/211 "경기게임마이스터고등학교 포트폴리오 사이트로 이동됩니다."
+
+[다운로드]: https://drive.google.com/file/d/1f8TTreT6IKN-IzZsN6sa-PwxEdgBKio9/view?usp=sharing "다운로드가 가능한 구글 드라이브로 이동됩니다."
